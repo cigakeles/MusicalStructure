@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4a4a">
+
+    <TextView
+        android:id="@+id/lib_name"
+        style="@style/NowPlayingHead"
+        android:text="@string/library_name" />
+
+    <LinearLayout
+        android:id="@+id/label"
+        style="@style/NowPlayingLİnear1">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/home" />
+        <TextView
+            style="@style/NowPlayingTextview"
+            android:text="@string/now_playing" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/player_header_ll"
+        style="@style/NowPlayingLİnear2">
+
+
+        <TextView
+            android:id="@+id/song_title_tv"
+            style="@style/NowPlayingTexview2" />
+    </LinearLayout>
+
+    <!-- Song Thumbnail Image -->
+    <LinearLayout
+        android:id="@+id/song_thumbnail_ll"
+        style="@style/NowplayingLinear3">
+
+        <ImageView
+            style="@style/NowPlayingİmage1"
+            android:src="@drawable/adele" />
+    </LinearLayout>
+
+    <!-- Player Footer -->
+    <LinearLayout
+        android:id="@+id/player_footer_ll"
+        style="@style/NowPlayingLinear4">
+
+        <!-- Player Buttons -->
+        <LinearLayout style="@style/NowPlayingLinear5">
+
+            <!-- Previous Button -->
+            <ImageButton
+                android:id="@+id/previous_ibtn"
+                style="@style/NowPlayingİmageBtn"
+                android:src="@drawable/btn_previous" />
+
+            <!-- Backward Button -->
+            <ImageButton
+                android:id="@+id/backward_ibtn"
+                style="@style/NowPlayingİmageBtn2"
+                android:src="@drawable/btn_backward" />
+
+            <!-- Play Button -->
+            <ImageButton
+                android:id="@+id/play_ibtn"
+                style="@style/NowPlayingİmageBtn3"
+                android:src="@drawable/btn_play" />
+
+            <!-- Forward Button -->
+            <ImageButton
+                android:id="@+id/forward_ibtn"
+                style="@style/NowPlayingİmageBtn4"
+                android:src="@drawable/btn_forward" />
+
+            <!-- Next Button -->
+            <ImageButton
+                android:id="@+id/next_ibtn"
+                style="@style/NowPlayingİmageBtn5"
+                android:src="@drawable/btn_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Progress Bar/Seek bar -->
+    <SeekBar
+        android:id="@+id/progressbar_sb"
+        style="@style/NowPlayingSeekbar" />
+
+
+    <!-- Timer Display -->
+    <LinearLayout
+        android:id="@+id/timer_display_ll"
+        style="@style/NowPalyingLinear6">
+
+        <!-- Current Duration Label -->
+        <TextView
+            android:id="@+id/current_duration_tv"
+            style="@style/NowPlayingTextview3" />
+
+        <!-- Total Duration Label -->
+        <TextView
+            android:id="@+id/total_duration_tv"
+            style="@style/NowPlayingTextview4" />
+    </LinearLayout>
+
+    <!-- Repeat / Shuffle buttons -->
+    <LinearLayout style="@style/NowPlayingLinear7">
+
+        <!-- Repeat Button -->
+        <ImageButton
+            android:id="@+id/repeat_ibtn"
+            style="@style/NowPlayingİmageBtn6"
+            android:src="@drawable/btn_repeat" />
+
+        <!-- Shuffle Button -->
+        <ImageButton
+            android:id="@+id/shuffle_ibtn"
+            style="@style/NowPlayingİmageBtn7"
+            android:src="@drawable/btn_shuffle" />
+    </LinearLayout>
+</RelativeLayout>

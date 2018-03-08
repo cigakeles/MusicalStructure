@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="80dp">
+
+    <TextView
+        android:id="@+id/song_name"
+        style="@style/ListİtemTextview1"
+        tools:text="@string/song_name" />
+
+    <TextView
+        android:id="@+id/song_artist"
+        style="@style/ListİtemTextview2"
+        tools:text="@string/artist_name" />
+
+    <TextView
+        android:id="@+id/duration_time"
+        style="@style/ListİtemTextview3"
+        tools:text="@string/duration_time" />
+
+    <ImageView
+        android:id="@+id/play_song"
+        app:srcCompat="@android:drawable/ic_media_play"
+        style="@style/Listİtemİmageview1" />
+
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CategoryStyle">
+        <item name="android:layout_width">@dimen/spacing0</item>
+        <item name="android:layout_height">@dimen/genre_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:padding">@dimen/spacing16</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DescriptionStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_marginTop">@dimen/spacing16</item>
+        <item name="android:layout_marginBottom">@dimen/spacing16</item>
+        <item name="android:paddingLeft">@dimen/spacing8</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="DescriptionStyle2" parent="DescriptionStyle">
+        <item name="android:layout_width">@dimen/spacing0</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:textColor">#FFD700</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="SongListStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/text_view_height</item>
+    </style>
+
+    <style name="CategoryStyle2" parent="CategoryStyle">
+        <item name="android:background">@color/colorPop</item>
+        <item name="android:drawableRight">@drawable/pop</item>
+    </style>
+
+    <style name="CategoryStyle3" parent="CategoryStyle">
+        <item name="android:background">@color/colorRock</item>
+        <item name="android:drawableRight">@drawable/rock</item>
+    </style>
+
+    <style name="CategoryStyle4" parent="CategoryStyle">
+        <item name="android:background">@color/colorHipHop</item>
+        <item name="android:drawableRight">@drawable/rap</item>
+    </style>
+
+    <style name="CategoryStyle5" parent="CategoryStyle">
+        <item name="android:background">@color/colorElectronic</item>
+        <item name="android:drawableRight">@drawable/electronic</item>
+    </style>
+
+    <style name="NowPlayingHead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dp_16</item>
+        <item name="android:textSize">@dimen/dp_20</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NowPlayingLİnear1">
+        <item name="android:layout_below">@+id/lib_name</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:background">#FFD700</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="NowPlayingTextview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="NowPlayingLİnear2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_60</item>
+        <item name="android:layout_below">@+id/label</item>
+        <item name="android:background">@drawable/inflater_player_header</item>
+        <item name="android:paddingLeft">@dimen/dp_5</item>
+        <item name="android:paddingRight">@dimen/dp_5</item>
+    </style>
+
+    <style name="NowPlayingTexview2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorSongText</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NowplayingLinear3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/player_header_ll</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+    </style>
+
+    <style name="NowPlayingİmage1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/thumbnail_image</item>
+    </style>
+
+    <style name="NowPlayingLinear4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/inflater_player_footer</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NowPlayingLinear5">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_corner</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+    </style>
+
+    <style name="NowPlayingİmageBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:contentDescription">@string/previous</item>
+    </style>
+
+    <style name="NowPlayingİmageBtn2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:contentDescription">@string/fast_backward</item>
+    </style>
+
+    <style name="NowPlayingİmageBtn3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:contentDescription">@string/play</item>
+    </style>
+
+    <style name="NowPlayingİmageBtn4">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:contentDescription">@string/fast_forward</item>
+    </style>
+
+    <style name="NowPlayingİmageBtn5">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:contentDescription">@string/next</item>
+    </style>
+
+
+    <style name="NowPalyingLinear6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_above">@id/progressbar_sb</item>
+        <item name="android:layout_marginBottom">@dimen/dp_10</item>
+        <item name="android:layout_marginLeft">@dimen/dp_20</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+    </style>
+
+    <style name="NowPlayingTextview3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/colorCurrentDuration</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NowPlayingTextview4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/colorTotalDuration</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NowPlayingLinear7">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_above">@id/timer_display_ll</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NowPlayingİmageBtn6">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/dp_5</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="NowPlayingİmageBtn7">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="NowPlayingSeekbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_above">@id/player_footer_ll</item>
+        <item name="android:layout_marginBottom">@dimen/dp_20</item>
+        <item name="android:layout_marginLeft">@dimen/dp_20</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+        <item name="android:paddingLeft">@dimen/dp_6</item>
+        <item name="android:paddingRight">@dimen/dp_6</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+        <item name="android:thumb">@drawable/seek_handler</item>
+    </style>
+
+    <style name="SongListTextview" parent="DescriptionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SongListListview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingEnd">@dimen/spacing16</item>
+        <item name="android:paddingLeft">@dimen/spacing16</item>
+        <item name="android:paddingRight">@dimen/spacing16</item>
+        <item name="android:paddingStart">@dimen/spacing16</item>
+        <item name="android:paddingTop">@dimen/spacing0</item>
+    </style>
+
+    <style name="ListİtemTextview1" parent="SongListStyle">
+        <item name="android:layout_alignLeft">@+id/song_artist</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignStart">@+id/song_artist</item>
+        <item name="android:layout_marginTop">@dimen/spacing8</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="ListİtemTextview2" parent="SongListStyle">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@+id/song_name</item>
+        <item name="android:layout_marginLeft">@dimen/spacing8</item>
+        <item name="android:layout_marginStart">@dimen/spacing8</item>
+        <item name="android:textSize">@dimen/text_view_size</item>
+    </style>
+
+    <style name="ListİtemTextview3" parent="SongListStyle">
+        <item name="android:layout_alignBaseline">@+id/song_name</item>
+        <item name="android:layout_alignBottom">@+id/song_name</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginEnd">@dimen/spacing16</item>
+        <item name="android:layout_marginRight">@dimen/spacing16</item>
+        <item name="android:textSize">@dimen/text_view_size</item>
+    </style>
+
+    <style name="Listİtemİmageview1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/duration_time</item>
+        <item name="android:layout_alignStart">@+id/duration_time</item>
+        <item name="android:layout_below">@+id/song_name</item>
+        <item name="android:contentDescription">@string/play</item>
+    </style>
+
+</resources>
